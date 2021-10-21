@@ -1,0 +1,30 @@
+@hostname = http://localhost:3333
+@user_id = 331247e5-4d12-4318-8aef-5df1137d5d38
+
+###
+
+POST {{hostname}}/users
+content-type: application/json
+username: marcelo.mac
+
+{
+	"name": "João",
+  "email": "joao.a.mac@gmail.com"
+}
+
+###
+
+PATCH {{hostname}}/users/{{user_id}}/admin
+content-type: application/json
+
+
+###
+
+GET {{hostname}}/users/{{user_id}}
+content-type: application/json
+
+###
+
+GET {{hostname}}/users
+content-type: application/json
+user_id: {{user_id}} 
