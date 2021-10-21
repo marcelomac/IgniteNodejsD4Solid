@@ -1,5 +1,6 @@
 @hostname = http://localhost:3333
-@user_id = 331247e5-4d12-4318-8aef-5df1137d5d38
+@user_id_admin = fd751ec2-309f-447f-8eb6-ff95f4e3e2da
+@user_id = a08b7f49-3182-4cec-a0a5-79c2462903fb
 
 ###
 
@@ -8,13 +9,14 @@ content-type: application/json
 username: marcelo.mac
 
 {
-	"name": "João",
-  "email": "joao.a.mac@gmail.com"
+	"name": "João 3",
+  "email": "joao6.a.mac@gmail.com",
+  "admin": false
 }
 
 ###
 
-PATCH {{hostname}}/users/{{user_id}}/admin
+PATCH {{hostname}}/users/{{user_id_admin}}/admin
 content-type: application/json
 
 
@@ -27,4 +29,4 @@ content-type: application/json
 
 GET {{hostname}}/users
 content-type: application/json
-user_id: {{user_id}} 
+user_id: {{user_id_admin}} 
