@@ -18,3 +18,20 @@ class User {
 }
 
 export { User };
+
+/*
+
+"type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  }
+                },
+                "example": {
+                  "name": "A user name",
+                  "email": "username@domain.com"
+                }
+*/
